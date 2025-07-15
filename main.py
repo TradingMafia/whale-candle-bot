@@ -4,10 +4,10 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-api_id = int(os.getenv("23343009"))
-api_hash = os.getenv("64be9584da1d26400c443c7cbb5234a1")
-bot_token = os.getenv("8048639727:AAE8f5zskgcyXw17YyhpQyarDzPT9UXVQyE")
-channel_username = os.getenv("Forexupdatesnews_bot")
+api_id = int(os.getenv("API_ID"))
+api_hash = os.getenv("API_HASH")
+bot_token = os.getenv("BOT_TOKEN")
+channel_username = os.getenv("CHANNEL_USERNAME")
 
 client = TelegramClient('bot', api_id, api_hash).start(bot_token=bot_token)
 
